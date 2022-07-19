@@ -4,21 +4,24 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Preferences from "./components/Preferences/Preferences";
 import Login from "./components/Login/Login";
-
+import SignUp from "./components/SignUp/SignUp";
+import { Landing } from "./components/Landing/Landing";
 function App() {
-  const [user, setUser] = useState(null);
+  // const [user, setUser] = useState(null);
 
-  if (!user) {
-    return <Login />;
-  }
+  // if (!user) {
+  //   return <Login />;
+  // }
 
   return (
     <div className="App">
       <div className="wrapper">
-        <h1>Application</h1>
         <BrowserRouter>
           <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/signup" element={<SignUp />} />
             <Route path="/preferences" element={<Preferences />} />
           </Routes>
         </BrowserRouter>
