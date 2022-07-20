@@ -8,12 +8,7 @@ import SignUp from "./components/SignUp/SignUp";
 import { Landing } from "./components/Landing/Landing";
 import { Marketplace } from "./components/Marketplace/Marketplace";
 function App() {
-  // const [user, setUser] = useState(null);
-
-  // if (!user) {
-  //   return <Login />;
-  // }
-
+  
   return (
     <div className="App">
       <div className="wrapper">
