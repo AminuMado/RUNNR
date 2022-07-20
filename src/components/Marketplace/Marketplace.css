@@ -1,0 +1,36 @@
+.marketplace__container {
+  background-color: silver;
+}
+.marketplace_header_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.marketplace_header_bottom_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.marketplace_header_bottom_bottom {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+.marketplace_search {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  padding-left: 30px;
+}
+.search_icon {
+  position: absolute;
+  left: 15px;
+  top: 23px;
+  opacity: 0.5;
+}
+.search_icon:hover {
+  opacity: 1;
+}
