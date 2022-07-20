@@ -1,9 +1,7 @@
 import "./Marketplace.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faArrowDownZA,
   faBars,
-  faCaretDown,
   faCartShopping,
   faSearch,
   faUser,
