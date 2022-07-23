@@ -34,3 +34,78 @@
 .search_icon:hover {
   opacity: 1;
 }
+.marketplace_primary_nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.marketplace_primary_nav ul li {
+  list-style: none;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: aliceblue;
+  width: fit-content;
+}
+.marketplace_secondary_nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.marketplace_secondary_nav ul li {
+  list-style: none;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: aliceblue;
+  width: fit-content;
+}
+.marketplace_secondary_nav ul li:active {
+  background-color: red;
+}
+.card_container > .card {
+  width: 18rem;
+}
+.card_container > .heart_icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 35px;
+  color: red;
+}
+.card_container .heart_icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 35px;
+  color: black;
+  cursor: pointer;
+}
+.card_container .heart_icon.liked {
+  color: red;
+}
+.card_container .shoppingcart_icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 35px;
+  color: black;
+  cursor: pointer;
+}
+.card_container .shoppingcart_icon.added {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 35px;
+  color: blue;
+}
+.card_container .star_icon {
+  position: absolute;
+  bottom: 120px;
+  right: 5px;
+  font-size: 35px;
+  cursor: pointer;
+}
+.card_container .star_icon.starred {
+  color: goldenrod;
+}
