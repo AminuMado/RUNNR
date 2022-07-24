@@ -12,6 +12,7 @@ import {
 import test_Src from "../../Assets/23.png";
 import { useState } from "react";
 import { Navbar } from "../Navbar/Navbar";
+import { Link } from "react-router-dom";
 export const Marketplace = () => {
   const [isLiked, setIsLiked] = useState(false);
   const [isStarred, setIsStarred] = useState(false);
@@ -74,9 +75,11 @@ export const Marketplace = () => {
             placeholder="search"
           />
           <FontAwesomeIcon className="search_icon" icon={faSearch} />
-          <button className="btn btn-primary">
-            Run it <p>get your packages delivered quickly and safely</p>
-          </button>
+          <Link to="./runit">
+            <button className="btn btn-primary">
+              Run it <p>get your packages delivered quickly and safely</p>
+            </button>
+          </Link>
         </div>
       </div>
       <div className="marketplace__navigation">
