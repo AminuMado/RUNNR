@@ -22,6 +22,9 @@ export const Landing = () => {
       </Link>
       <Link to="/customer">
         <button className="btn btn-outline-primary">Customer</button>
+      </Link>{" "}
+      <Link to="/marketplace">
+        <button className="btn btn-outline-primary">Marketplace</button>
       </Link>
     </div>
   );
