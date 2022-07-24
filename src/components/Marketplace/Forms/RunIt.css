@@ -1,0 +1,35 @@
+.runit_container_wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(78, 122, 78);
+  padding: 20px;
+}
+
+.runit_container {
+  display: grid;
+  place-items: center;
+  background-color: rgb(78, 122, 78);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.runit_container > a .back_icon {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  font-size: 40px;
+  color: black;
+}
+.runit_container .select_container {
+  position: relative;
+}
+.select_container .select_icon {
+  position: absolute;
+  bottom: 13px;
+  right: 10px;
+  opacity: 0.5;
+}
+.submit_btn {
+  width: -webkit-fill-available;
+  width: -moz-available;
+}
