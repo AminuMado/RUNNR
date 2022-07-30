@@ -94,7 +94,11 @@ export const RunIt = () => {
             By clicking the "Run It" button you agree to the terms and
             conditions of the platform
           </p>
-          <button type="submit" className="btn btn-primary submit_btn">
+          <button
+            onClick={handleSubmit}
+            type="submit"
+            className="btn btn-primary submit_btn"
+          >
             Submit
           </button>
         </form>

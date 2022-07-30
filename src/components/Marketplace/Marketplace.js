@@ -4,20 +4,14 @@ import {
   faBars,
   faBarsProgress,
   faCartShopping,
-  faHeart,
   faSearch,
-  faStar,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-import test_Src from "../../Assets/23.png";
-import { useState } from "react";
+import { Card } from "./Card/Card";
+
 import { Navbar } from "../Navbar/Navbar";
 import { Link } from "react-router-dom";
 export const Marketplace = () => {
-  const [isLiked, setIsLiked] = useState(false);
-  const [isStarred, setIsStarred] = useState(false);
-  const [isAddedToCart, setIsAddedToCart] = useState(false);
-
   const isLoggedIn = true;
   const primaryNavItems = [
     "Body Wears",
@@ -26,7 +20,6 @@ export const Marketplace = () => {
     "Devices/Electronics",
   ];
   const secondaryNavItems = ["Shoes", "Clothes", "Accessories", "UnderWear"];
-
   return (
     <div className="marketplace__container">
       {/* 
@@ -34,9 +27,6 @@ export const Marketplace = () => {
     1. Header Section // Think of the runnr name cart icon run it, hamburger icon etx
     2. Navigation Section // The bodywears, food, grocries etc 
     3. Body Section // Think of the shoes and what not
-    
-
-    
     */}
       <div className="marketplace__header">
         {/* 
@@ -93,33 +83,8 @@ export const Marketplace = () => {
           <FontAwesomeIcon className="bars_icon" icon={faBarsProgress} />
         </div>
         <div className="card_container">
-          <div className="card">
-            <img className="care-img-top" src={test_Src} alt="icon"></img>
-            <div className="card-body">
-              <FontAwesomeIcon
-                onClick={() => setIsLiked(!isLiked)}
-                className={isLiked ? "heart_icon liked" : "heart_icon"}
-                icon={faHeart}
-              />
-              <FontAwesomeIcon
-                onClick={() => setIsAddedToCart(!isAddedToCart)}
-                className={
-                  isAddedToCart
-                    ? "shoppingcart_icon added"
-                    : "shoppingcart_icon"
-                }
-                icon={faCartShopping}
-              />
-              <FontAwesomeIcon
-                onClick={() => setIsStarred(!isStarred)}
-                className={isStarred ? "star_icon starred" : "star_icon"}
-                icon={faStar}
-              />
-              <h5 className="card-title">Startropper</h5>
-              <h6 className="card-price">$30</h6>
-              <h6 className="card-distance">5.0km</h6>
-            </div>
-          </div>
+          <Card id="card_1" />
+          <Card id="card_2" />
         </div>
       </div>
     </div>
