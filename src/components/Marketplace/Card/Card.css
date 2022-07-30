@@ -1,0 +1,46 @@
+.card {
+  width: 18rem;
+}
+.heart_icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 35px;
+  color: red;
+}
+.heart_icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 35px;
+  color: black;
+  cursor: pointer;
+}
+.heart_icon.liked {
+  color: red;
+}
+.shoppingcart_icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 35px;
+  color: black;
+  cursor: pointer;
+}
+.shoppingcart_icon.added {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 35px;
+  color: blue;
+}
+.star_icon {
+  position: absolute;
+  bottom: 120px;
+  right: 5px;
+  font-size: 35px;
+  cursor: pointer;
+}
+.star_icon.starred {
+  color: goldenrod;
+}
