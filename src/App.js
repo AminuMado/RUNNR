@@ -7,6 +7,7 @@ import SignUp from "./components/SignUp/SignUp";
 import { Landing } from "./components/Landing/Landing";
 import { Marketplace } from "./components/Marketplace/Marketplace";
 import { RunIt } from "./components/Marketplace/Forms/RunIt";
+import { Details } from "./components/Marketplace/Details/Details";
 function App() {
   // const [user, setUser] = useState(null);
 
@@ -26,6 +27,7 @@ function App() {
             <Route path="/preferences" element={<Preferences />} />
             <Route path="/marketplace" element={<Marketplace />} />
             <Route path="/marketplace/runit" element={<RunIt />} />
+            <Route path="/marketplace/:id" element={<Details />} />
           </Routes>
         </BrowserRouter>
       </div>
