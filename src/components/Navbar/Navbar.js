@@ -21,8 +21,3 @@ export const Navbar = (props) => {
     </nav>
   );
 };
-
-function add(a, b) {
-  return a + b;
-}
-add(1, 2); // 3
