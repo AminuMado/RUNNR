@@ -54,10 +54,12 @@ export const Marketplace = () => {
         </div>
         <div className="marketplace_header_bottom_top">
           <span>Marketplace</span>
-          <FontAwesomeIcon
-            className="shoppingcart_icon"
-            icon={faCartShopping}
-          />
+          <Link to={"/checkout"}>
+            <FontAwesomeIcon
+              className="shoppingcart_icon"
+              icon={faCartShopping}
+            />
+          </Link>
         </div>
         <div className="marketplace_header_bottom_bottom">
           <input

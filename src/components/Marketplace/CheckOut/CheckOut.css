@@ -1,0 +1,76 @@
+.checkout_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.checkout_listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  padding: 20px 20px;
+  margin: 5px;
+  position: relative;
+  background-color: gray;
+}
+.checkout_listItem_description p {
+  margin: 0;
+}
+.checkout_listItem_description_distance {
+  position: absolute;
+  bottom: 0;
+  color: red;
+}
+.checkout_links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+}
+.minusCircle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 50%;
+  color: limegreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  font-weight: 900;
+}
+.minusCircle:hover {
+  color: red;
+}
+.checkout_summary {
+  border-top: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.checkout_payment {
+  background-color: gray;
+  /* height: 30vh; */
+  width: 100vw;
+  position: fixed;
+  transition: all 1s;
+}
+.checkout_payment.hidden {
+  transform: translateY(100vh);
+}
+.checkout_payment_item {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+  position: relative;
+}
+.checkout_payment_item_desc {
+  color: burlywood;
+  position: absolute;
+  top: 18px;
+}

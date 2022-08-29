@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { Carousel } from "../../Carousel/Carousel";
+import { Link } from "react-router-dom";
 export const Details = () => {
   const [selectedSize, setSelectedSize] = useState(null);
   const [quantity, setQuantity] = useState(1);
@@ -29,7 +30,9 @@ export const Details = () => {
         4. sizes
         5.add to cart
       */}
-      <FontAwesomeIcon icon={faArrowLeft} />
+      <Link to={"/marketplace"}>
+        <FontAwesomeIcon icon={faArrowLeft} />
+      </Link>
 
       <div className="card">
         <FontAwesomeIcon icon={faArrowRight} />
@@ -63,6 +66,9 @@ export const Details = () => {
           </div>
         </div>
         <button>Add to Cart</button>
+        <Link to={"/checkout"}>
+          <button>Go to Cart</button>
+        </Link>
       </div>
     </div>
   );
